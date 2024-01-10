@@ -25,4 +25,24 @@ int main() {
   else {
     std::cout << "Tails\n";
   }
+
+  // Third example
+  int number;
+  std::cout << "Enter a number to search for Pokemon: ";
+  std::cin >> number;
+
+  switch(number) {
+    case 1:
+      std::cout << "You have Bulbusaur.\n";
+      break;
+    case 2:
+      std::cout << "You have Pikachu.\n";
+      break;
+    case 3:
+      std::cout << "You have jigglypuff.\n";
+      break;
+    default:
+      std::cout << "Unknown.\n";
+      break;
+  }
 }
