@@ -3,15 +3,26 @@
   E.g. g++ basic.cpp -o basic, then ./basic
 */
 #include <iostream>
+#include <stdlib.h>
+#include <ctime>
 
 int main() {
+  // First example
   double tempf;
   double tempc;
   
   std::cout << "Enter the temperature in Fahrenheit: ";
   std::cin >> tempf;
-  
   tempc = (tempf - 32) / 1.8;
-  
   std::cout << "The temp is " << tempc << " degrees Celsius.\n";
+
+  // Second example
+  srand(time(NULL)); // srand is to seed the random number generator, time(NULL) returns the current time in seconds since the epoch (January 1, 1970, 00:00:00 UTC).
+  int coin = rand() % 2; // rand() returns a random number in the range 0 to 32767
+  if (coin == 0) {
+    std::cout << "Heads\n";
+  }
+  else {
+    std::cout << "Tails\n";
+  }
 }
