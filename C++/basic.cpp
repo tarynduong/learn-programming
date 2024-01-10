@@ -5,6 +5,7 @@
 #include <iostream>
 #include <stdlib.h>
 #include <ctime>
+#include <vector>
 
 int main() {
   // Get user inputs
@@ -60,4 +61,29 @@ int main() {
   if (pin == 1234) {
     std::cout << "PIN accepted!\nYou now have access.\n";
   }
+
+  /* Vector # Array
+  Vectors don’t require a static size. It’s possible to add and remove elements from them, as well as access their current size at any time.
+  E.g. std::vector<int> favoriteNums[] = {7, 9, 15, 16};
+  With arrays, you can’t add or remove elements; you can only modify existing elements.
+  E.g. int favoriteNums[] = {7, 9, 15, 16};
+  */
+  std::vector<double> delivery_order;
+  std::vector<std:string> jedi;
+  double total = 0.0;
+  
+  jedi.push_back("finn");
+  std::cout << jedi.size(); 
+  
+  delivery_order.push_back(8.99);
+  delivery_order.push_back(3.75);
+  delivery_order.push_back(0.99);
+  delivery_order.push_back(5.99);
+  delivery_order.pop_back(5.99);
+  std::cout << delivery_order[2];
+  
+  for (int i = 0; i < delivery_order.size(); i++) {
+    total += delivery_order[i];
+  }
+  std::cout << total;
 }
