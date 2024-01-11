@@ -12,6 +12,11 @@
 #include "functions.h"
 
 int main() {
+  // OOP
+  Song song1;
+  song1.add_title("Electric Relaxation");
+  std::cout << song1.get_title() << "\n";
+  
   // Create normal functions
   sayHello(); # auto to new line
   std::cout << feed_the_cat() << "\n";
