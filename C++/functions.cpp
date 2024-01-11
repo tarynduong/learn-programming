@@ -3,11 +3,16 @@
 #include "functions.h" // just for OOP case
 
 // OOP
-void Song::add_title(std::string new_title) {
+// constructor
+Song::Song(std::string new_title, std::string new_artist) {
   title = new_title;
+  artist = new_artist;
 }
 std::string Song::get_title() {
   return title;
+}
+std::string Song::get_artist() {
+  return artist;
 }
 
 // We can create many functions with the same name for different operations - function overloading
