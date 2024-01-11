@@ -1,7 +1,7 @@
 /* 
   Before excuting code, we need to compile the file by typing in terminal: g++ <file_name>.cpp -o <excuted_file_name>, then ./<excuted_file_name>
-  E.g. g++ basic.cpp -o basic, then ./basic
-  In case we have multiple cpp, we need to compile all at once to use them. E.g. g++ basic.cpp functions.cpp
+  E.g. g++ main.cpp -o main, then ./main
+  In case we have multiple cpp, we need to compile all at once to use them. E.g. g++ main.cpp functions.cpp
 */
 #include <iostream>
 #include <stdlib.h>
@@ -12,7 +12,7 @@
 #include "functions.h"
 
 int main() {
-  // Test functions
+  // Create normal functions
   sayHello(); # auto to new line
   std::cout << feed_the_cat() << "\n";
   std::cout << tenth_power(2) << "\n";
@@ -20,9 +20,15 @@ int main() {
   for (int element: first_three_multiples(8)) {
     std::cout << element << "\n";
   }
+  
+  // Create function overloading
   std::cout << fancy_number(12, 3) << "\n";
   std::cout << fancy_number(12, 3, 19) << "\n";
   std::cout << fancy_number(13.5, 3.8) << "\n";
+
+  // Create template in only functions.h in case of using the same function with the same operation for different data types.
+  std::cout << get_smallest(100, 60) << "\n";
+  std::cout << get_smallest(2543.2, 3254.3) << "\n";
   
   // Measure time taken for goodnight1():
   std::chrono::high_resolution_clock::time_point start = std::chrono::high_resolution_clock::now();
