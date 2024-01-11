@@ -13,9 +13,9 @@
 
 int main() {
   // OOP
-  Song song1;
-  song1.add_title("Electric Relaxation");
-  std::cout << song1.get_title() << "\n";
+  Song back_to_black("Back to Black", "Amy Winehouse");
+  std::cout << back_to_black.get_title() << "\n";
+  std::cout << back_to_black.get_artist() << "\n";
   
   // Create normal functions
   sayHello(); # auto to new line
