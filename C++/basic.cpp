@@ -8,9 +8,11 @@
 #include <ctime>
 #include <vector>
 #include <cmath>
+#include <chrono>
 #include "functions.h"
 
 int main() {
+  // Test functions
   sayHello(); # auto to new line
   std::cout << feed_the_cat() << "\n";
   std::cout << tenth_power(2) << "\n";
@@ -18,6 +20,14 @@ int main() {
   for (int element: first_three_multiples(8)) {
     std::cout << element << "\n";
   }
+
+  // Measure time taken for goodnight1():
+  std::chrono::high_resolution_clock::time_point start = std::chrono::high_resolution_clock::now();
+  std::cout << goodnight1("tulip");
+  std::chrono::high_resolution_clock::time_point end = std::chrono::high_resolution_clock::now();
+  std::chrono::duration<double, std::milli> time_span = end - start;
+  std::cout << "Time taken for goodnight1(): " << time_span.count() << " milliseconds.\n\n";
+  
   // Get user inputs
   double tempf;
   double tempc;
