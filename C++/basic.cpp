@@ -1,13 +1,14 @@
 /* 
   Before excuting code, we need to compile the file by typing in terminal: g++ <file_name>.cpp -o <excuted_file_name>, then ./<excuted_file_name>
   E.g. g++ basic.cpp -o basic, then ./basic
+  In case we have multiple cpp, we need to compile all at once to use them. E.g. g++ basic.cpp functions.cpp
 */
 #include <iostream>
 #include <stdlib.h>
 #include <ctime>
 #include <vector>
 #include <cmath>
-#include <functions.h>
+#include "functions.h"
 
 int main() {
   sayHello(); # auto to new line
