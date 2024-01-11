@@ -8,26 +8,17 @@
 #include <vector>
 #include <cmath>
 
-void sayHello() {
-  std::cout << "Hi there!\n";
-}
-
-std::string feed_the_cat() {
-  return "Cat is fed!";
-}
-
-int tenth_power(int num) {
-  return pow(num, 10);
-}
-
-std::vector<int> first_three_multiples(int num) {
-  return {num, num * 2, num * 3};
-}
+void sayHello();
+std::string feed_the_cat();
+int tenth_power(int num);
+std::vector<int> first_three_multiples(int num);
+bool is_palindrome(std::string text);
 
 int main() {
   sayHello(); # auto to new line
   std::cout << feed_the_cat() << "\n";
   std::cout << tenth_power(2) << "\n";
+  std::cout << is_palindrome("madam") << "\n";
   for (int element: first_three_multiples(8)) {
     std::cout << element << "\n";
   }
