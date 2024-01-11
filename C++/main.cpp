@@ -41,6 +41,12 @@ int main() {
   std::chrono::high_resolution_clock::time_point end = std::chrono::high_resolution_clock::now();
   std::chrono::duration<double, std::milli> time_span = end - start;
   std::cout << "Time taken for goodnight1(): " << time_span.count() << " milliseconds.\n\n";
+
+  // Reference variable, any changes to reference also happen with original variable
+  int soda = 99;
+  int &pop = soda;
+  pop++;
+  std::cout << "Pop: " << pop << ", Soda: " << soda << "\n";
   
   // Get user inputs
   double tempf;
