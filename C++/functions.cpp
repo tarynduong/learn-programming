@@ -19,6 +19,11 @@ std::string Song::get_artist() {
   return artist;
 }
 
+// Constant reference
+int square(int const &i) {
+  return i * i;
+}
+
 // We can create many functions with the same name for different operations - function overloading
 int fancy_number(int num1, int num2) {
   return num1 - num2 + (num1 * num2);
