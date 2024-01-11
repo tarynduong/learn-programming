@@ -6,6 +6,7 @@
 #include <stdlib.h>
 #include <ctime>
 #include <vector>
+#include <cmath>
 
 void sayHello() {
   std::cout << "Hi there!\n";
@@ -15,9 +16,15 @@ std::string feed_the_cat() {
   return "Cat is fed!";
 }
 
+int tenth_power(int num) {
+  return pow(num, 10);
+}
+
 int main() {
-  std::cout << sayHello() << "\n";
+  sayHello(); # auto to new line
   std::cout << feed_the_cat() << "\n";
+  std::cout << tenth_power(2) << "\n";
+  
   // Get user inputs
   double tempf;
   double tempc;
