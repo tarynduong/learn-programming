@@ -7,7 +7,17 @@
 #include <ctime>
 #include <vector>
 
+void sayHello() {
+  std::cout << "Hi there!\n";
+}
+
+std::string feed_the_cat() {
+  return "Cat is fed!";
+}
+
 int main() {
+  std::cout << sayHello() << "\n";
+  std::cout << feed_the_cat() << "\n";
   // Get user inputs
   double tempf;
   double tempc;
