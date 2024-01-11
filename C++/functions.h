@@ -3,3 +3,10 @@ std::string feed_the_cat();
 int tenth_power(int num);
 std::vector<int> first_three_multiples(int num);
 bool is_palindrome(std::string text);
+std::string goodnight1(std::string thing1);
+/*
+inline
+std::string goodnight1(std::string thing1) {
+  return "Goodnight, " + thing1 + ".\n";
+}
+*/
