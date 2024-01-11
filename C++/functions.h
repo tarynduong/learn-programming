@@ -6,6 +6,8 @@ public:
   Song(std::string new_title, std::string new_artist);
   std::string get_title();
   std::string get_title();
+  // deconstructor
+  ~Song();
 };
 
 // Template
