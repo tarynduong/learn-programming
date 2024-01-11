@@ -8,6 +8,7 @@
 #include <vector>
 #include <cmath>
 
+// To use functions, compile 2 files at the same time: g++ basic.cpp functions.cpp
 void sayHello();
 std::string feed_the_cat();
 int tenth_power(int num);
