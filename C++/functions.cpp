@@ -17,6 +17,10 @@ std::vector<int> first_three_multiples(int num) {
   return {num, num * 2, num * 3};
 }
 
+std::string goodnight1(std::string thing1) {
+  return "Goodnight, " + thing1 + ".\n";
+}
+
 bool is_palindrome(std::string text) {
   for (int i = 0; i < text.size(); i++) {
     if (text[i] == text[text.size() - 1]) {
