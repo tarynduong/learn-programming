@@ -1,7 +1,10 @@
 /* 
-  Before excuting code, we need to compile the file by typing in terminal: g++ <file_name>.cpp -o <excuted_file_name>, then ./<excuted_file_name>
+  - Before excuting code, we need to compile the file by typing in terminal: g++ <file_name>.cpp -o <excuted_file_name>, then ./<excuted_file_name>
   E.g. g++ main.cpp -o main, then ./main
-  In case we have multiple cpp, we need to compile all at once to use them. E.g. g++ main.cpp functions.cpp
+  - In case we have multiple cpp, we need to compile all at once to use them. E.g. g++ main.cpp functions.cpp
+  - In the standard library, we have the following:
+  >> unique_ptr: a smart pointer that owns and manages another object through and disposes of that object when the unique_ptr goes out of scope.
+  >> shared_ptr: a smart pointer that retains shared ownership of an object through a pointer. Several shared_ptr objects may own the same object.
 */
 #include <iostream>
 #include <stdlib.h>
@@ -51,6 +54,13 @@ int main() {
   // const reference
   int side = 5;
   std::cout << square(side) << "\n";
+  
+  // Print memory address of a variable, which is stored by a pointer
+  std::cout << &side << "\n";
+  int* ptr = &side;
+  std::cout << ptr << "\n";
+  std::cout << *ptr << "\n"; // to print back the value of 5
+  int* ptr = nullptr; // provide a typesafe pointer value representing an empty pointer
   
   // Get user inputs
   double tempf;
