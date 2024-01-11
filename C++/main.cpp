@@ -48,6 +48,10 @@ int main() {
   pop++;
   std::cout << "Pop: " << pop << ", Soda: " << soda << "\n";
   
+  // const reference
+  int side = 5;
+  std::cout << square(side) << "\n";
+  
   // Get user inputs
   double tempf;
   double tempc;
