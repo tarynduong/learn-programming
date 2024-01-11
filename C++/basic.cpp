@@ -20,11 +20,17 @@ int tenth_power(int num) {
   return pow(num, 10);
 }
 
+std::vector<int> first_three_multiples(int num) {
+  return {num, num * 2, num * 3};
+}
+
 int main() {
   sayHello(); # auto to new line
   std::cout << feed_the_cat() << "\n";
   std::cout << tenth_power(2) << "\n";
-  
+  for (int element: first_three_multiples(8)) {
+    std::cout << element << "\n";
+  }
   // Get user inputs
   double tempf;
   double tempc;
