@@ -1,3 +1,12 @@
+// OOP
+class Song {
+  std::string title;
+public:
+  void add_title(std::string new_title) {
+    title = new_title;
+  }
+};
+
 // Template
 template <typename T>
 T get_smallest_number(T num1, T num2) {
