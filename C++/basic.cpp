@@ -20,7 +20,10 @@ int main() {
   for (int element: first_three_multiples(8)) {
     std::cout << element << "\n";
   }
-
+  std::cout << fancy_number(12, 3) << "\n";
+  std::cout << fancy_number(12, 3, 19) << "\n";
+  std::cout << fancy_number(13.5, 3.8) << "\n";
+  
   // Measure time taken for goodnight1():
   std::chrono::high_resolution_clock::time_point start = std::chrono::high_resolution_clock::now();
   std::cout << goodnight1("tulip");
