@@ -1,3 +1,4 @@
+// Functions declaration
 void sayHello();
 std::string feed_the_cat();
 int tenth_power(int num);
