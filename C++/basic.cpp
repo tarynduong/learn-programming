@@ -7,13 +7,7 @@
 #include <ctime>
 #include <vector>
 #include <cmath>
-
-// To use functions, compile 2 files at the same time: g++ basic.cpp functions.cpp
-void sayHello();
-std::string feed_the_cat();
-int tenth_power(int num);
-std::vector<int> first_three_multiples(int num);
-bool is_palindrome(std::string text);
+#include <functions.h>
 
 int main() {
   sayHello(); # auto to new line
