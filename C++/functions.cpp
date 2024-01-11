@@ -8,6 +8,10 @@ Song::Song(std::string new_title, std::string new_artist) {
   title = new_title;
   artist = new_artist;
 }
+// Deconstructor
+Song::~Song() {
+  return "Goodbye " + title + "!\n";
+}
 std::string Song::get_title() {
   return title;
 }
