@@ -1,5 +1,14 @@
 #include <iostream>
 #include <cmath>
+#include "functions.h" // just for OOP case
+
+// OOP
+void Song::add_title(std::string new_title) {
+  title = new_title;
+}
+std::string Song::get_title() {
+  return title;
+}
 
 // We can create many functions with the same name for different operations - function overloading
 int fancy_number(int num1, int num2) {
