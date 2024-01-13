@@ -16,5 +16,12 @@ namespace GettingInput
 
       // Always put the character m after the number to tell C# that it's a decimal. This data type is used mostly for financial metrics
       decimal revenue = 8347209.7642m;
+
+      // Built-in method
+      int numberOne = 12932;
+      int numberTwo = -2828472;
+      double numberOneSqrt = Math.Floor(Math.Sqrt(numberOne));
+      double numberTwoSqrt = Math.Floor(Math.Sqrt(Math.Abs(numberTwo)));
+      Console.WriteLine(Math.Min(numberOneSqrt, numberTwoSqrt));
   }
 }
