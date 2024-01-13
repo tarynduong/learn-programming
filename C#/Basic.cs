@@ -18,10 +18,13 @@ namespace GettingInput
       decimal revenue = 8347209.7642m;
 
       // Built-in method
-      int numberOne = 12932;
-      int numberTwo = -2828472;
+      int numberOne = 12.76;
+      int numberTwo = -2;
       double numberOneSqrt = Math.Floor(Math.Sqrt(numberOne));
       double numberTwoSqrt = Math.Floor(Math.Sqrt(Math.Abs(numberTwo)));
       Console.WriteLine(Math.Min(numberOneSqrt, numberTwoSqrt));
+      Console.WriteLine(Math.Pow(numberOne, numberTwo));
+      Console.WriteLine(Math.Ceiling(numberOne));
+      Console.WriteLine(Math.Max(numberOne, numberTwo));
   }
 }
